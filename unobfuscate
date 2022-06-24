@@ -1,13 +1,14 @@
 getgenv().LEAN = {}
 local lean,_lean = 'abcdefghijklmnopqrstuvwxyz',{"😆","🙂","🤗","😱","🤢","🙄","🗿","🥺","😒","👿","👍","🎂","💀","🤤","🤮","😷","👽","🐒","🎈","🎗","🎟","💨","💞","💜","🛑","💥"}
-LEAN.UnObfuscate = function(lean_)
+LEAN.Unobfuscate = function(lean_)
     for i = 1,#lean,1 do
         lean_ = string.gsub(lean_,"LEAN".._lean[i],string.sub(lean,i,i))
     end
-    print((lean_))
+    print("lean_")
 end
 
 
-LEAN.UnObfuscate([[
---script
-]])
+LEAN.Unobfuscate([[
+    --code
+    
+    ]])
